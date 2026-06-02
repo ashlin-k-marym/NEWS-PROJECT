@@ -15,3 +15,16 @@ df = pd.read_sql(
     "SELECT * FROM news_data ORDER BY created_at DESC",
     engine
 )
+
+st.markdown("""
+<style>
+body {
+    background-color: #0e1117;
+}
+.main-title {
+    font-size: 42px;
+    font-weight: bold;
+    color: black;
+}
+</style>
+""", unsafe_allow_html=True)
