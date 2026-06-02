@@ -58,3 +58,5 @@ cur.execute("""
     sentiment_score,
     sentiment_label
 ))
+
+conn.commit()
