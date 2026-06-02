@@ -60,3 +60,7 @@ cur.execute("""
 ))
 
 conn.commit()
+
+print(
+    f"{len(articles)} news articles inserted successfully!"
+)
