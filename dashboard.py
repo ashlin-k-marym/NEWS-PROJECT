@@ -34,3 +34,7 @@ st.sidebar.radio(
     ["View News", "Analytics"]
 )
 
+st.sidebar.markdown("### Explanation")
+st.sidebar.markdown("""
+Sentiment score indicates whether the news sentiment is positive or negative.
+""")
