@@ -19,3 +19,5 @@ CREATE TABLE IF NOT EXISTS news_data (
     published_at TIMESTAMP
 )
 """)
+
+conn.commit()
