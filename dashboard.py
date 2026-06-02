@@ -38,3 +38,7 @@ st.sidebar.markdown("### Explanation")
 st.sidebar.markdown("""
 Sentiment score indicates whether the news sentiment is positive or negative.
 """)
+
+st.sidebar.markdown("### Latest update data")
+if not df.empty:
+    st.sidebar.write(df["created_at"].max())
