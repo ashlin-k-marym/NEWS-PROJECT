@@ -20,3 +20,7 @@ conn = psycopg2.connect(
     password="password",
     port="5432"
 )
+
+response = requests.get(url, params=params)
+
+articles = response.json().get("articles", [])
