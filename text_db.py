@@ -7,3 +7,5 @@ conn = psycopg2.connect(
     password="password",
     port="5432"
 )
+
+cur = conn.cursor()
