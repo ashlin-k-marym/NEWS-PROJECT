@@ -47,3 +47,6 @@ if not df.empty:
     '<div class="main-title">News Analytics sentiment score dashboard</div>',
     unsafe_allow_html=True
 )
+    
+    if df.empty:
+    st.warning("No news data found in database.")
