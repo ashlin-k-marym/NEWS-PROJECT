@@ -42,3 +42,8 @@ Sentiment score indicates whether the news sentiment is positive or negative.
 st.sidebar.markdown("### Latest update data")
 if not df.empty:
     st.sidebar.write(df["created_at"].max())
+
+    st.markdown(
+    '<div class="main-title">News Analytics sentiment score dashboard</div>',
+    unsafe_allow_html=True
+)
