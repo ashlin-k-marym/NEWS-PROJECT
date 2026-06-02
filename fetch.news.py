@@ -26,3 +26,8 @@ response = requests.get(url, params=params)
 articles = response.json().get("articles", [])
 
 print(response.json())
+
+for article in articles:
+    title = article.get("title")
+    source_name = article.get("source", {}).get("name")
+    published_at = article.get("publishedAt")
