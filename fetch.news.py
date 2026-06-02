@@ -36,3 +36,6 @@ for article in articles:
     published_at,
     "%Y-%m-%dT%H:%M:%SZ"
 ).date()
+    
+sentiment_score = TextBlob(title).sentiment.polarity
+
