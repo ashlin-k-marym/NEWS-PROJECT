@@ -24,3 +24,5 @@ conn = psycopg2.connect(
 response = requests.get(url, params=params)
 
 articles = response.json().get("articles", [])
+
+print(response.json())
